@@ -36,7 +36,7 @@
             </a>
             <nav class="menu__list">
                 <a href="index.html" class="menu__list-item">Главная</a>
-                <a href="#" class="menu__list-item">О седоне</a>
+                <a href="#" class="menu__list-item">О Седоне</a>
                 <a href="catalog.html" class="menu__list-item is-active">Гостиницы</a>
             </nav>
             <div class="top-menu__action">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-                <label class="button top-menu__action-button" for="search-modal">Хочу сюда!</label>
+                <a href="#" class="button top-menu__action-button" for="search-modal">Хочу сюда!</a>
             </div>
         </div>
     </header>
@@ -99,7 +99,7 @@
                     </ul>
                 </fieldset>
                 <fieldset class="filter__group">
-                    <legend class="filter__title">Тип жилья:</legend>
+                    <legend class="filter__title">Тип Жилья:</legend>
                     <ul class="filter__list">
                         <li class="filter__item">
                             <label class="control">
@@ -160,20 +160,24 @@
                 </select>
 
                 <div class="view-modes">
-                    <a class="view-modes__link is-active" href="#" aria-label="Плиткой">
+                    <a href="catalog.html?view=tile" class="view-modes__link is-active" aria-label="Плиткой">
                         <svg class="icon">
                             <use xlink:href="#view-grid"></use>
                         </svg>
+                        <span class="visually-hidden">Показать
+                      карточки</span>
                     </a>
-                    <a class="view-modes__link" href="#" aria-label="Крупными карточками">
+                    <a href="catalog.html?view=card" class="view-modes__link" aria-label="Крупными карточками">
                         <svg class="icon">
                             <use xlink:href="#view-card"></use>
                         </svg>
+                        <span class="visually-hidden">Показать карточки с описанием</span>
                     </a>
-                    <a class="view-modes__link" href="#" aria-label="Списком">
+                    <a href="catalog.html?view=list" class="view-modes__link" aria-label="Списком">
                         <svg class="icon">
                             <use xlink:href="#view-list"></use>
                         </svg>
+                        <span class="visually-hidden">Показать список</span>
                     </a>
                 </div>
             </div>

@@ -10,7 +10,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-bottom: 45px;
+            margin-bottom: 35px;
             padding: 0;
             list-style: none;
             font-size: 16px;
@@ -190,7 +190,7 @@
 
     & .filter__title {
         padding: 0;
-        margin-bottom: 26px;
+        margin-bottom: 35px;
         font-size: 20px;
         line-height: 24px;
         font-weight: bold;
@@ -213,7 +213,7 @@
         flex: 0 0 auto;
         max-width: 191px;
         margin-left: auto;
-        padding-top: 51px;
+        padding-top: 57px;
     }
 }
 
