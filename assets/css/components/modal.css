@@ -173,7 +173,7 @@
         height: 17px;
         fill: #000000;
         pointer-events: none;
-        opacity: .3;
+        opacity: 0.3;
         &:is(:hover) {
             opacity: 1;
         }
