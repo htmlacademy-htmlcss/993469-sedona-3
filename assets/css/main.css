@@ -252,15 +252,28 @@
     }
 
     & .logo-htmlAcademy {
+        --icon-color: #000000;
+        --icon-color-hover: #756157;
+        --icon-color-active: rgba(117, 97, 87, 0.3);
+        display: flex;
         text-decoration: none;
 
-        img {
-            transition: 200ms;
+        & .icon {
+            /* размеры прежнего PNG-логотипа, совпадают с viewBox спрайта */
+            width: 115px;
+            height: 33px;
+            fill: var(--icon-color);
+            transition: fill 200ms;
         }
         &:is(:hover) {
-            img {
-                filter: drop-shadow(2px 5px 5px #6a6666);
-            }
+            --icon-color: var(--icon-color-hover);
+        }
+        /* фокус браузерный: обводку не переопределяем, меняем только цвет */
+        &:is(:focus-visible) {
+            --icon-color: var(--icon-color-hover);
+        }
+        &:is(:active) {
+            --icon-color: var(--icon-color-active);
         }
     }
 }
