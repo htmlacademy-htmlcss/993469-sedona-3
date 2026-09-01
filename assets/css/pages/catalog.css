@@ -368,12 +368,16 @@
         --box-shadow-toggle-l: var(--left-box) var(--box-shadow);
         --box-shadow-toggle-r: calc(-1 * var(--left-box)) var(--box-shadow);
         --size: 20px;
+        --bg: #ffffff;
+        --bg-hover: #f2f2f2;
+        --bg-focus: #f2f2f2;
+        --bg-active: #e6e6e6;
         position: absolute;
         top: 0;
         width: var(--size);
         height: var(--size);
         padding: 0;
-        background: #ffffff;
+        background: var(--bg);
         border: none;
         border-radius: 4px;
         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
@@ -381,12 +385,25 @@
         transition: 200ms;
 
         &:is(:hover) {
-            background: #f2f2f2;
+            background: var(--bg-hover);
         }
 
         &:is(:focus-visible) {
+            background: var(--bg-focus);
             outline: 3px solid #83b3d3;
             outline-offset: 2px;
+        }
+
+        &:is(:active) {
+            background: var(--bg-active);
+        }
+
+        &:disabled,
+        &.is-disabled {
+            background: #e5e5e5;
+            box-shadow: none;
+            cursor: default;
+            pointer-events: none;
         }
     }
 
