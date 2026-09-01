@@ -1,16 +1,3 @@
-
-
-/*.modal__switch {*/
-/*    position: absolute;*/
-/*    width: 1px;*/
-/*    height: 1px;*/
-/*    margin: -1px;*/
-/*    padding: 0;*/
-/*    border: none;*/
-/*    clip-path: inset(50%);*/
-/*    overflow: hidden;*/
-/*}*/
-
 .modal-overlay {
     position: fixed;
     inset: 0;
@@ -47,15 +34,6 @@
     opacity: 0;
     transition: opacity 300ms ease;
 }
-
-/*.modal__switch:checked ~ .modal-overlay {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-
-/*.modal__switch:checked ~ .modal-overlay .modal {*/
-/*    opacity: 1;*/
-/*}*/
 
 /* пользователям с отключёнными анимациями — просто показать окно */
 @media (prefers-reduced-motion: reduce) {

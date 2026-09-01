@@ -39,13 +39,15 @@
                 <a href="catalog.html" class="menu__list-item">Гостиницы</a>
             </nav>
             <div class="top-menu__action">
-                <div class="top-menu__action-items" aria-label="Поиск">
-                    <div class="top-menu__action-search action-button">
+                <div class="top-menu__action-items">
+                    <div class="top-menu__action-search action-button" aria-label="Поиск">
+                        <span class="visually-hidden">Поиск</span>
                         <svg class="icon">
                             <use xlink:href="#search"></use>
                         </svg>
                     </div>
                     <div class="top-menu__action-favorite action-button" aria-label="Избранное">
+                        <span class="visually-hidden">Избранное</span>
                         <div class="favorite-count">12</div>
                         <svg class="icon">
                             <use xlink:href="#heart"></use>
@@ -222,7 +224,7 @@
             <div class="search-form__row">
                 <label class="search-form__label" for="check-in">Дата Заезда:</label>
                 <div class="search-form__field">
-                    <input class="search-form__input" type="text" id="check-in" name="check-in" value="27 апреля 2020">
+                    <input class="search-form__input" type="text" id="check-in" name="check-in" value="27 апреля 2020" required>
                     <svg class="icon search-form__icon">
                         <use xlink:href="#calendar"></use>
                     </svg>
@@ -233,7 +235,7 @@
             <div class="search-form__row">
                 <label class="search-form__label" for="check-out">Дата Выезда:</label>
                 <div class="search-form__field">
-                    <input class="search-form__input" type="text" id="check-out" name="check-out" value="1 сентября 2023">
+                    <input class="search-form__input" type="text" id="check-out" name="check-out" value="1 сентября 2023" required>
                     <svg class="icon search-form__icon">
                         <use xlink:href="#calendar"></use>
                     </svg>
