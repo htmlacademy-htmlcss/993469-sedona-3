@@ -40,13 +40,13 @@
             </nav>
             <div class="top-menu__action">
                 <div class="top-menu__action-items">
-                    <div class="top-menu__action-search action-button" aria-label="Поиск">
+                    <div class="top-menu__action-search action-button">
                         <span class="visually-hidden">Поиск</span>
                         <svg class="icon">
                             <use xlink:href="#search"></use>
                         </svg>
                     </div>
-                    <div class="top-menu__action-favorite action-button" aria-label="Избранное">
+                    <div class="top-menu__action-favorite action-button">
                         <span class="visually-hidden">Избранное</span>
                         <div class="favorite-count">12</div>
                         <svg class="icon">
@@ -210,11 +210,11 @@
 
 <!-- чтобы включить модально окно нужно добавить класс 'open' к 'modal-overlay' -->
 <div class="modal-overlay open" data-test="modal">
-    <label class="modal-overlay__backdrop" for="search-modal" aria-label="Закрыть окно поиска"></label>
+    <button class="modal-overlay__backdrop" type="button" aria-label="Закрыть окно поиска"></button>
 
     <section class="modal">
         <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
-        <button class="modal__close" type="button" for="search-modal" aria-label="Закрыть окно поиска">
+        <button class="modal__close" type="button" aria-label="Закрыть окно поиска">
             <svg class="icon">
                 <use xlink:href="#close"></use>
             </svg>
